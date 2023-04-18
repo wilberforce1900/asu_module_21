@@ -9,3 +9,10 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Mintable.sol";
 
 // Create a constructor for the KaseiCoin contract and have the contract inherit the libraries that you imported from OpenZeppelin.
+contract KaseiCoin is ERC20, ERC20Detailed, ERC20Mintable{ 
+    //create the contract KaiseiCoin
+    constructor()ERC20Detailed("KaiseiCoin", "KSC", 18)public{}
+
+
+
+}
